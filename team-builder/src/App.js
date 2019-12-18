@@ -1,23 +1,38 @@
 import React, { useState } from 'react';
+import Members from './components/Members';
+import MemberForm from './components/MemberForm';
 
 
 import './App.css';
+
 
 function App() {
   const [members, setMembers] = useState([
     {
       id: 1,
-      name: 'Ronald Brennan',
+      member: 'Ronald Brennan',
       email: 'rbrennan@yada.com',
       role: ''
     }
   ])
 
+  const addNewMember = member => {
+    const newMember = {
+      id: Date.now(),
+      member: member.member,
+      email: member.email,
+      role: member.role
+    };
+    setMembers([...members, newMember]);
+  }
+
 
 
   return (
     <div className="App">
-      <h1>Hello Members</h1>
+      <h1>Private Members</h1>
+      <MemberForm addNewMember={addNewMember} />
+      <Members members={members} />
     </div>
   );
 }
