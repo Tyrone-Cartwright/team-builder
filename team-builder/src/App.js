@@ -12,7 +12,7 @@ function App() {
       id: 1,
       member: 'Ronald Brennan',
       email: 'rbrennan@yada.com',
-      role: ''
+      role: 'Full Stack Developer'
     }
   ])
 

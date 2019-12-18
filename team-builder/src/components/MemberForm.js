@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 
 const MemberForm = props => {
-  const [member, setMember] = useState({ name: '', email: '', role: '' });
+  const [member, setMember] = useState('');
 
   const handleChange = e => {
     setMember({ ...member, [e.target.name]: e.target.value });
