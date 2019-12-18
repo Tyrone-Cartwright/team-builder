@@ -1,0 +1,93 @@
+/* @import url('https: //fonts.googleapis.com/css?family=Acme&display=swap'); */
+
+html,
+body,
+.App {
+    /* background-image: url('../public/john-schnobrich-2FPjlAyMQTA-unsplash\ \(1\).jpg'); */
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    font-family: 'Acme', sans-serif;
+    text-align: center;
+    padding: 30px;
+    letter-spacing: 3px;
+}
+
+.member-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.member {
+    background: #fecdfe;
+    box-shadow: 0 5px 10px rgba(0, 20, 75, 0.9), 0 3px 5px rgba(0, 35, 0, .2);
+    width: 100%;
+    max-width: 250px;
+    padding: 10px;
+    margin: 15px auto;
+    text-align: left;
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+input {
+    width: 150px;
+    padding: 15px 20px;
+    margin: 10px 10px;
+    box-sizing: border-box;
+    border: 1px solid #bbb8dd;
+    border-radius: 4px;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #000;
+    box-shadow: 2px 2px 5px 0 rgba(0, 35, 0, .2), 0 5px 10px rgba(0, 20, 75, 0.9);
+}
+
+label {
+    margin-bottom: -10px;
+    text-align: center;
+    width: 200px;
+}
+
+
+/* .App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
